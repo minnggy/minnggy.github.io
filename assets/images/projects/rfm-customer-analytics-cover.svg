@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">RFM Customer Analytics 專案成果封面</title>
+  <desc id="desc">RFM Customer Analytics 專案文字封面，使用抽象客戶分群與下鑽意象，不包含虛構圖表或數據。</desc>
+  <rect width="1600" height="900" fill="#182230"/>
+  <rect x="0" y="0" width="18" height="900" fill="#285f8f"/>
+
+  <g fill="none" stroke="#5b7d9d" stroke-width="2" opacity="0.42">
+    <path d="M1085 190L1280 285L1470 190"/>
+    <path d="M1280 285V500"/>
+    <path d="M1085 610L1280 500L1470 610"/>
+    <path d="M1280 500V740"/>
+  </g>
+
+  <g font-family="Inter, Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" text-anchor="middle">
+    <circle cx="1085" cy="190" r="82" fill="#223247" stroke="#86a6c2" stroke-width="3"/>
+    <circle cx="1470" cy="190" r="82" fill="#223247" stroke="#86a6c2" stroke-width="3"/>
+    <circle cx="1085" cy="610" r="82" fill="#223247" stroke="#86a6c2" stroke-width="3"/>
+    <text x="1085" y="210" fill="#ffffff" font-size="54" font-weight="760">R</text>
+    <text x="1470" y="210" fill="#ffffff" font-size="54" font-weight="760">F</text>
+    <text x="1085" y="630" fill="#ffffff" font-size="54" font-weight="760">M</text>
+
+    <rect x="1185" y="405" width="190" height="190" rx="12" fill="#285f8f"/>
+    <circle cx="1280" cy="465" r="30" fill="#d9e6f0"/>
+    <path d="M1220 555c12-47 108-47 120 0" fill="#d9e6f0"/>
+    <text x="1280" y="640" fill="#8fb6d6" font-size="19" font-weight="700" letter-spacing="2">CUSTOMER</text>
+
+    <rect x="1380" y="550" width="190" height="120" rx="8" fill="#223247" stroke="#86a6c2" stroke-width="3"/>
+    <text x="1475" y="602" fill="#ffffff" font-size="22" font-weight="700">DETAIL</text>
+    <text x="1475" y="635" fill="#8fb6d6" font-size="15" font-weight="650">DRILLTHROUGH</text>
+  </g>
+
+  <g font-family="Inter, Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif">
+    <text x="120" y="125" fill="#8fb6d6" font-size="24" font-weight="700" letter-spacing="5">PROJECT CASE STUDY</text>
+    <text x="120" y="245" fill="#ffffff" font-size="72" font-weight="760" letter-spacing="-2">RFM Customer Analytics</text>
+    <text x="120" y="335" fill="#ffffff" font-size="50" font-weight="700">客戶分群與互動分析</text>
+    <text x="120" y="395" fill="#aebdca" font-size="28" font-weight="600">Customer Segmentation × Power BI</text>
+
+    <line x1="120" y1="480" x2="820" y2="480" stroke="#4f6073" stroke-width="2"/>
+    <text x="120" y="540" fill="#dce5ed" font-size="26" font-weight="600">Power BI · DAX · RFM</text>
+    <text x="120" y="610" fill="#8fb6d6" font-size="24" font-weight="650">Recency · Frequency · Monetary · Drillthrough</text>
+    <text x="120" y="790" fill="#7d8c9c" font-size="19" font-weight="600" letter-spacing="2">CUSTOMER SEGMENTATION / INTERACTIVE ANALYSIS</text>
+  </g>
+</svg>

@@ -1,16 +1,167 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RFM Customer Analytics｜王洺方作品集</title>
-  <meta name="description" content="Power BI RFM 客戶分析練習，涵蓋分群、地區、月份、顧客明細與交易查詢。">
-  <link rel="canonical" href="https://minnggy.github.io/projects/rfm-customer-analytics.html"><link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/css/site.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RFM Customer Analytics | 王洺方</title>
+  <meta name="description" content="RFM customer segmentation and Power BI dashboard project by Mingfang Wang.">
+  <link rel="canonical" href="https://minnggy.github.io/projects/rfm-customer-analytics.html">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="RFM Customer Analytics | 王洺方">
+  <meta property="og:description" content="Customer Segmentation × Power BI">
+  <meta property="og:url" content="https://minnggy.github.io/projects/rfm-customer-analytics.html">
+  <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
   <a class="skip-link" href="#main">跳至主要內容</a>
-  <header class="site-header"><div class="nav-shell"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">WM</span><span>王洺方</span></a><button class="menu-button" type="button" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="site-navigation" data-menu-button><span></span></button><nav class="site-nav" id="site-navigation" aria-label="主要導覽" data-site-nav data-open="false"><a href="../index.html#about">About</a><a href="../index.html#experience">Experience</a><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../resume.html">Resume</a><a class="nav-contact" href="../index.html#contact">Contact</a></nav></div></header>
-  <main id="main"><section class="case-hero"><div class="container case-hero-grid"><div><p class="case-tag">BI gallery · Power BI practice</p><h1>RFM Customer Analytics</h1><p class="case-lead">以 Recency、Frequency、Monetary 建立客戶分群與明細查詢，練習從總覽走到顧客層級的 BI 互動。</p></div><dl class="case-meta"><div><dt>Business question</dt><dd>哪些客戶群需要不同的維繫與喚回策略？</dd></div><div><dt>Pages</dt><dd>RFM · CustomerDetail · Inquiry</dd></div><div><dt>Tools</dt><dd>Power BI · DAX · Parameters</dd></div><div><dt>Status</dt><dd>Practice dashboard; no deployment result claimed</dd></div></dl></div></section>
-    <section class="case-section section-white"><div class="container case-two"><div class="case-aside"><p class="section-label">Model</p><strong>客戶價值以三個行為維度描述。</strong><p>距今時間、購買次數與貢獻金額保留為可調參數與分群依據。</p></div><div class="case-content"><h2>從分群總覽到交易明細</h2><p>主頁呈現 RFM 分類、地區、月份與顧客數；CustomerDetail 與 Inquiry 支援客戶編號、基本屬性、訂單、產品、成本、金額、毛利與毛利率等欄位。</p><div class="metric-grid"><div class="metric-box"><strong>R</strong><span>Recency · 距今時間間隔</span></div><div class="metric-box"><strong>F</strong><span>Frequency · 購買次數</span></div><div class="metric-box"><strong>M</strong><span>Monetary · 貢獻金額</span></div><div class="metric-box"><strong>Detail</strong><span>Customer and transaction drill-down</span></div></div></div></div></section>
-    <section class="case-section"><div class="container"><div class="caveat"><strong>Portfolio boundary</strong><p>此作品為 Power BI 課程練習，展示建模與互動設計；未提供真實行銷實驗、分群後的 campaign uplift 或商業導入結果，因此不宣稱營收影響。</p></div><div class="case-actions"><a class="button" href="../index.html#projects">Back to projects</a></div></div></section>
-  </main><footer class="site-footer"><div class="container footer-row"><span>Power BI practice dashboard · Business impact not claimed.</span><a href="#main">Back to top</a></div></footer><script src="../assets/js/site.js" defer></script>
-</body></html>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">WM</span><span>王洺方</span></a>
+      <button class="menu-button" type="button" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="site-navigation" data-menu-button><span></span></button>
+      <nav class="site-nav" id="site-navigation" aria-label="主要導覽" data-site-nav data-open="false">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../resume.html">Resume</a>
+        <a class="nav-contact" href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <div class="container case-hero-grid">
+        <div>
+          <p class="case-tag">RFM Customer Analytics｜Customer Segmentation × Power BI</p>
+          <h1>RFM Customer Analytics</h1>
+          <p class="case-lead">透過 RFM 架構分析客戶消費行為，並以 Power BI 建立互動式客戶分群與資料探索工具。</p>
+        </div>
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>Data Analysis｜Dashboard Development</dd></div>
+          <div><dt>Tools</dt><dd>Power BI · RFM Analysis</dd></div>
+          <div><dt>Capabilities</dt><dd>Customer Segmentation · Data Visualization · Interactive Dashboard · Drillthrough Analysis</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <figure class="case-visual container">
+      <img src="../assets/images/projects/rfm-customer-analytics-cover.svg" alt="RFM Customer Analytics 客戶分群與 Power BI 專案成果封面" width="1600">
+      <figcaption>Project case study cover — no simulated dashboard or fabricated data.</figcaption>
+    </figure>
+
+    <section class="case-section section-white">
+      <div class="container case-two">
+        <div class="case-aside">
+          <p class="section-label">Business Question</p>
+          <strong>如何透過 RFM 分析辨識不同客戶價值與消費行為？</strong>
+        </div>
+        <div class="case-content">
+          <h2>問題</h2>
+          <p>單看某筆交易，無法同時理解客戶最近一次購買、購買頻率與金額貢獻。這個專案將三個行為面向放入同一個分析架構，再以 Power BI 連結客群總覽與個別客戶明細。</p>
+          <dl class="kpi-list">
+            <div><dt>Recency</dt><dd>距離客戶最近一次交易的時間間隔</dd></div>
+            <div><dt>Frequency</dt><dd>客戶在資料期間內的購買次數</dd></div>
+            <div><dt>Monetary</dt><dd>客戶的貢獻金額</dd></div>
+            <div><dt>Customer Detail</dt><dd>如何從客群分析下鑽到個別客戶與交易明細</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <p class="section-label">Data / RFM Method</p>
+        <h2>從三個行為維度建立客戶分群</h2>
+        <div class="metric-grid">
+          <div class="metric-box"><strong>R</strong><span>Recency · 距今時間間隔</span></div>
+          <div class="metric-box"><strong>F</strong><span>Frequency · 購買次數</span></div>
+          <div class="metric-box"><strong>M</strong><span>Monetary · 貢獻金額</span></div>
+          <div class="metric-box"><strong>Segment</strong><span>RFM 分類與客戶群體探索</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section section-white">
+      <div class="container">
+        <p class="section-label">Workflow</p>
+        <h2>從資料模型到客戶下鑽</h2>
+        <div class="process-line" role="group" aria-label="RFM 分析與 Power BI 流程">
+          <div><span>01</span><strong>資料模型</strong><small>組織客戶、訂單、產品、通路、日期與區域欄位</small></div>
+          <div><span>02</span><strong>RFM 指標</strong><small>建立 Recency、Frequency 與 Monetary 分析欄位</small></div>
+          <div><span>03</span><strong>分類與參數</strong><small>使用 RFM 分類、量值與 R/F/M 參數</small></div>
+          <div><span>04</span><strong>視覺探索</strong><small>透過篩選、分布、散佈圖、樹狀圖與表格查看客群</small></div>
+          <div><span>05</span><strong>CustomerDetail</strong><small>從 RFM 主頁下鑽至個別客戶明細</small></div>
+          <div><span>06</span><strong>Inquiry</strong><small>保留另一個已綁定客戶編號的 Drillthrough 頁面</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container case-two">
+        <div class="case-aside">
+          <p class="section-label">Power BI Analysis</p>
+          <strong>從 RFM 分群開始，再進入客戶層級的資料探索。</strong>
+        </div>
+        <div class="case-content">
+          <h2>Power BI Dashboard</h2>
+          <p>PBIX 實際包含 Home、RFM、CustomerDetail 與 Inquiry 四個頁面。RFM 主頁使用交易月份、區域／居住地、RFM 分類與 R/F/M 參數進行互動式探索。</p>
+          <dl class="kpi-list">
+            <div><dt>Home</dt><dd>專案入口視覺</dd></div>
+            <div><dt>RFM</dt><dd>客戶分類、R/F/M 分布、散佈圖、樹狀圖、區域矩陣與客戶清單</dd></div>
+            <div><dt>CustomerDetail</dt><dd>個別客戶屬性、訂單、產品與交易指標明細</dd></div>
+            <div><dt>Inquiry</dt><dd>實際存在的隱藏 Drillthrough 頁面</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section section-white">
+      <div class="container case-two">
+        <div class="case-aside">
+          <p class="section-label">Customer Drillthrough</p>
+          <strong>From segment to customer.</strong>
+          <p>CustomerDetail 與 Inquiry 在閱讀模式中隱藏，作為客戶層級的下鑽頁面。</p>
+        </div>
+        <div class="case-content">
+          <h2>從客群分析到個別客戶</h2>
+          <p>RFM 主頁具有「顯示客戶詳細資料」Drillthrough 按鈕，實際連向 CustomerDetail，並以客戶編號作為篩選條件。</p>
+          <p>使用者可繼續查看客戶基本屬性、月份購買次數與貢獻金額、產品大分類，以及訂單、產品、數量、成本、金額、毛利與毛利率明細。</p>
+          <div class="caveat">
+            <strong>Inquiry</strong>
+            <p>Inquiry 也是 PBIX 中已存在的 Drillthrough 頁面，並綁定客戶編號；本頁不延伸其他未確認用途。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section section-ink">
+      <div class="container">
+        <p class="section-label">Takeaway</p>
+        <h2>從整體客群分析到個別客戶探索</h2>
+        <p class="section-intro">這個專案將 RFM 客戶分群方法與 Power BI 互動式分析結合，讓使用者能從整體客群進一步探索個別客戶。</p>
+        <div class="metric-grid">
+          <div class="metric-box"><strong>RFM</strong><span>將距今時間、購買次數與貢獻金額納入同一架構</span></div>
+          <div class="metric-box"><strong>Interactive</strong><span>透過篩選、參數與多種視覺探索客戶分類</span></div>
+          <div class="metric-box"><strong>Drillthrough</strong><span>CustomerDetail 與 Inquiry 保留客戶層級的查看路徑</span></div>
+          <div class="metric-box"><strong>Boundary</strong><span>未提供 campaign uplift、營收提升、ROI 或商業導入結果</span></div>
+        </div>
+        <div class="case-actions">
+          <a class="button" href="../index.html#data-bi-gallery">Back to Data &amp; BI</a>
+          <a class="button button-secondary" href="medical-dashboard.html">Next: Medical Dashboard</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>Power BI practice dashboard · Business impact not claimed.</span>
+      <a href="#main">Back to top</a>
+    </div>
+  </footer>
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>
