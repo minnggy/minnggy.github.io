@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://minnggy.github.io/sitemap.xml
