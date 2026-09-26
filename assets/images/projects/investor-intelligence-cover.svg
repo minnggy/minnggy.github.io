@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">半導體投資人輿情分析專案封面</title>
+  <desc id="desc">Investor Intelligence 專案文字封面，使用抽象半導體電路意象，不包含虛構圖表或數據。</desc>
+  <rect width="1600" height="900" fill="#182230"/>
+  <rect x="0" y="0" width="18" height="900" fill="#285f8f"/>
+
+  <g fill="none" stroke="#5b7d9d" stroke-width="2" opacity="0.38">
+    <path d="M1040 112h310v110h126"/>
+    <path d="M1120 274h215v92h141"/>
+    <path d="M1025 420h175v120h276"/>
+    <path d="M1120 690h155v-92h201"/>
+    <path d="M930 760h210v-90h92"/>
+    <path d="M1240 112v104"/>
+    <path d="M1335 366v150h141"/>
+  </g>
+
+  <g fill="#285f8f">
+    <circle cx="1040" cy="112" r="7"/>
+    <circle cx="1476" cy="222" r="7"/>
+    <circle cx="1120" cy="274" r="7"/>
+    <circle cx="1476" cy="366" r="7"/>
+    <circle cx="1025" cy="420" r="7"/>
+    <circle cx="1476" cy="540" r="7"/>
+    <circle cx="1120" cy="690" r="7"/>
+    <circle cx="1476" cy="598" r="7"/>
+    <circle cx="930" cy="760" r="7"/>
+  </g>
+
+  <g transform="translate(1185 360)">
+    <rect x="0" y="0" width="210" height="210" rx="10" fill="#223247" stroke="#86a6c2" stroke-width="3"/>
+    <rect x="45" y="45" width="120" height="120" rx="6" fill="#285f8f" opacity="0.76"/>
+    <path d="M70 75h70M70 105h70M70 135h45" stroke="#d9e6f0" stroke-width="8" opacity="0.8"/>
+    <g stroke="#86a6c2" stroke-width="5">
+      <path d="M-25 35H0M-25 70H0M-25 105H0M-25 140H0M-25 175H0"/>
+      <path d="M210 35h25M210 70h25M210 105h25M210 140h25M210 175h25"/>
+      <path d="M35-25V0M70-25V0M105-25V0M140-25V0M175-25V0"/>
+      <path d="M35 210v25M70 210v25M105 210v25M140 210v25M175 210v25"/>
+    </g>
+  </g>
+
+  <g font-family="Inter, Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif">
+    <text x="120" y="125" fill="#8fb6d6" font-size="24" font-weight="700" letter-spacing="5">PROJECT CASE STUDY</text>
+    <text x="120" y="240" fill="#ffffff" font-size="76" font-weight="760" letter-spacing="-2">Investor Intelligence</text>
+    <text x="120" y="335" fill="#ffffff" font-size="56" font-weight="700">半導體投資人輿情分析</text>
+    <text x="120" y="395" fill="#aebdca" font-size="28" font-weight="600">BI 與市場資訊分析專案</text>
+
+    <line x1="120" y1="480" x2="820" y2="480" stroke="#4f6073" stroke-width="2"/>
+    <text x="120" y="540" fill="#dce5ed" font-size="26" font-weight="600">Python · SQL · Power BI · DAX</text>
+    <text x="120" y="610" fill="#8fb6d6" font-size="24" font-weight="650">Attention · Topic · Company · Investor Stance</text>
+    <text x="120" y="790" fill="#7d8c9c" font-size="19" font-weight="600" letter-spacing="2">MARKET INFORMATION / BI DASHBOARD</text>
+  </g>
+</svg>

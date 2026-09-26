@@ -3,40 +3,188 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Investor Intelligence｜王洺方作品集</title>
-  <meta name="description" content="以 5,737 篇 PTT Stock production posts 與 778,853 則 comments 建立半導體投資社群分析與 Power BI 資料模型。">
+  <title>半導體投資人輿情分析｜王洺方作品集</title>
+  <meta name="description" content="使用 Python、SQL、Power BI 與 DAX 整理 PTT Stock 半導體相關討論，建立市場注意力、議題、公司與投資人可觀察立場的 BI 分析專案。">
   <link rel="canonical" href="https://minnggy.github.io/projects/investor-intelligence.html">
   <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="Investor Intelligence｜半導體投資人輿情分析">
-  <meta property="og:description" content="BI × Data Analytics × Business Insight case study">
+  <meta property="og:title" content="半導體投資人輿情分析｜Investor Intelligence">
+  <meta property="og:description" content="BI 與市場資訊分析專案">
   <meta property="og:type" content="article">
   <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
   <a class="skip-link" href="#main">跳至主要內容</a>
-  <header class="site-header"><div class="nav-shell"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">WM</span><span>王洺方</span></a><button class="menu-button" type="button" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="site-navigation" data-menu-button><span></span></button><nav class="site-nav" id="site-navigation" aria-label="主要導覽" data-site-nav data-open="false"><a href="../index.html#about">About</a><a href="../index.html#experience">Experience</a><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../resume.html">Resume</a><a class="nav-contact" href="../index.html#contact">Contact</a></nav></div></header>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">WM</span><span>王洺方</span></a>
+      <button class="menu-button" type="button" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="site-navigation" data-menu-button><span></span></button>
+      <nav class="site-nav" id="site-navigation" aria-label="主要導覽" data-site-nav data-open="false">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../resume.html">Resume</a>
+        <a class="nav-contact" href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <main id="main">
-    <section class="case-hero"><div class="container case-hero-grid"><div><p class="case-tag">Featured project · BI × Data Analytics</p><h1>Investor Intelligence</h1><p class="case-lead">把 PTT Stock 的非結構化討論轉換為可追溯的 Post、Comment、Topic、Company、Supply Chain 與 Investor Stance 分析層。</p></div><dl class="case-meta"><div><dt>Business question</dt><dd>哪些議題與公司驅動注意力、互動與可觀察立場？</dd></div><div><dt>Role</dt><dd>Data pipeline · QA · Business analysis · Power BI</dd></div><div><dt>Tools</dt><dd>Python · SQL · Power BI · DAX</dd></div><div><dt>Period</dt><dd>2026-06-03 – 2026-09-01</dd></div></dl></div></section>
+    <section class="case-hero">
+      <div class="container case-hero-grid">
+        <div>
+          <p class="case-tag">Investor Intelligence｜BI 與市場資訊分析專案</p>
+          <h1>半導體投資人輿情分析</h1>
+          <p class="case-lead">本專案將 PTT Stock 中與半導體產業相關的討論資料進行整理與分析，從討論熱度、議題、公司與投資人可觀察立場等面向建立分析架構，並以 Power BI 建立互動式儀表板，協助使用者從市場討論中快速掌握值得進一步觀察的資訊。</p>
+        </div>
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>資料整理與分析｜BI Dashboard｜Business Analysis</dd></div>
+          <div><dt>Tools</dt><dd>Python · SQL · Power BI · DAX</dd></div>
+          <div><dt>Period</dt><dd>2026</dd></div>
+        </dl>
+      </div>
+    </section>
 
-    <figure class="case-visual container"><img src="../assets/images/projects/investor-intelligence-detail.webp" alt="Investor Intelligence Power BI 實際報表畫面，包含產業注意力、公司互動與投資人立場分布" width="1800" height="1350"><figcaption>Actual Power BI report / photographed from the completed project file</figcaption></figure>
+    <figure class="case-visual container">
+      <img src="../assets/images/projects/investor-intelligence-cover.svg" alt="Investor Intelligence 半導體投資人輿情分析專案封面，列出 Python、SQL、Power BI、DAX 與分析面向" width="1600" height="900">
+      <figcaption>Project case study cover — no simulated dashboard or fabricated data</figcaption>
+    </figure>
 
-    <section class="case-section section-white"><div class="container"><div class="metric-grid"><div class="metric-box"><strong>5,737</strong><span>Production posts</span></div><div class="metric-box"><strong>778,853</strong><span>Production comments</span></div><div class="metric-box"><strong>69 / 69</strong><span>Preflight QA checks passed</span></div><div class="metric-box"><strong>0</strong><span>Final Holdout records in analysis</span></div></div></div></section>
+    <section class="case-section section-white">
+      <div class="container case-two">
+        <div class="case-aside">
+          <p class="section-label">Problem</p>
+          <strong>市場討論很多，真正需要的是可理解、可回查的資訊。</strong>
+        </div>
+        <div class="case-content">
+          <h2>問題</h2>
+          <p>大量投資人討論同時包含文章、留言、議題與公司資訊，單看討論數量，很難判斷哪些議題受到較多關注，以及不同議題與公司的討論內容呈現什麼樣的可觀察立場。</p>
+          <dl class="kpi-list">
+            <div><dt>Discussion Attention</dt><dd>哪些議題受到較多討論？</dd></div>
+            <div><dt>Topic</dt><dd>市場正在討論什麼？</dd></div>
+            <div><dt>Company</dt><dd>哪些公司被頻繁提及？</dd></div>
+            <div><dt>Investor Stance</dt><dd>討論中呈現哪些可觀察立場？</dd></div>
+            <div><dt>Evidence</dt><dd>如何回到原始文章確認分析結果？</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-    <section class="case-section"><div class="container case-two"><div class="case-aside"><p class="section-label">Problem</p><strong>討論量不是單一指標。</strong><p>高 attention 可能只是事件集中；高 comments 代表討論強度，不等於正向立場；UNKNOWN 也不能被併入 NEUTRAL。</p></div><div class="case-content"><h2>先建立可追溯的分析基礎，再談訊號</h2><p>正式分析完全排除 60 筆 Final Holdout，並將文章與留言分開處理。Post 使用正式月份；Comment 缺乏可靠年份，因此只透過 parent post 的月份提供討論脈絡，不把它偽裝成留言自身的時間序列。</p><div class="caveat"><strong>Grain first</strong><p>Attention 以 distinct post_id 計算；Sentiment 維持 target-level；多標籤 bridge 保留 many-to-many 結構；UNKNOWN 與 NEUTRAL 全程分開。</p></div></div></div></section>
+    <section class="case-section">
+      <div class="container">
+        <p class="section-label">Data Scope</p>
+        <h2>我處理了什麼資料？</h2>
+        <div class="metric-grid">
+          <div class="metric-box"><strong>5,737</strong><span>Production posts</span></div>
+          <div class="metric-box"><strong>778,853</strong><span>Production comments</span></div>
+          <div class="metric-box"><strong>69 / 69</strong><span>Power BI preflight QA checks passed</span></div>
+          <div class="metric-box"><strong>0</strong><span>Final Holdout records included in analysis</span></div>
+        </div>
+      </div>
+    </section>
 
-    <section class="case-section section-white"><div class="container"><p class="section-label">Workflow</p><h2>Problem → Data → Analysis → Insight → Action</h2><div class="process-line" role="group" aria-label="專案流程"><div><span>01</span><strong>PTT acquisition</strong></div><div><span>02</span><strong>Frozen classification</strong></div><div><span>03</span><strong>Relationship QA</strong></div><div><span>04</span><strong>Analytical layer</strong></div><div><span>05</span><strong>Signal review</strong></div><div><span>06</span><strong>Power BI model</strong></div></div></div></section>
+    <section class="case-section section-white">
+      <div class="container">
+        <p class="section-label">Workflow</p>
+        <h2>從社群討論到 Power BI 報表</h2>
+        <div class="process-line" role="group" aria-label="專案流程">
+          <div><span>01</span><strong>資料蒐集</strong><small>整理 PTT Stock 半導體相關討論資料</small></div>
+          <div><span>02</span><strong>資料清理</strong><small>整理文章、留言與相關欄位</small></div>
+          <div><span>03</span><strong>分類與標記</strong><small>建立 Topic、Company、Supply Chain 與 Investor Stance 分析欄位</small></div>
+          <div><span>04</span><strong>資料驗證</strong><small>確認資料關聯、分類與分析邏輯</small></div>
+          <div><span>05</span><strong>BI 建模</strong><small>將整理後的資料建立 Power BI 分析架構</small></div>
+          <div><span>06</span><strong>Dashboard</strong><small>查看市場注意力、議題、公司與投資人立場</small></div>
+        </div>
+      </div>
+    </section>
 
-    <section class="case-section"><div class="container"><p class="section-label">Selected findings</p><h2>三個能回到資料與文章證據的訊號</h2><div class="insight-list">
-      <article class="insight-row"><span class="insight-grade">A</span><h3>AI / HPC attention 上升，立場未同步改善</h3><p>2026-06 → 2026-07，attention 223 → 316；Positive 10 → 15、Negative 4 → 15，net stance 0.429 → 0.000。Evidence extraction 評為 A，解讀為 attention–stance divergence，不解讀成股價預測。</p></article>
-      <article class="insight-row"><span class="insight-grade">A</span><h3>財報／獲利討論的重要性提高</h3><p>2026-06 → 07 → 08，attention 114 → 246 → 183；attention share 6.16% → 11.01% → 11.46%。此訊號只做 attention 解讀，不強行加入低樣本 stance 結論。</p></article>
-      <article class="insight-row"><span class="insight-grade">B</span><h3>TSMC attention 與 observable stance 同時轉變</h3><p>2026-06 → 07，attention 150 → 217；Positive 7 → 17、Negative 14 → 7，net stance -0.333 → 0.417。Evidence extraction 評為 B，需保留 company mapping 與 stance coverage caveat。</p></article>
-    </div></div></section>
+    <section class="case-section">
+      <div class="container case-two">
+        <div class="case-aside">
+          <p class="section-label">Power BI Dashboard</p>
+          <strong>從市場概況開始，再逐步查看議題、公司與代表性文章。</strong>
+          <p>目前因帳號與發布權限限制，未提供公開互動式 Power BI 連結。</p>
+        </div>
+        <div class="case-content">
+          <h2>Power BI Dashboard</h2>
+          <p>將分析結果整理成不同資訊層級，讓使用者可以從市場概況開始，再進一步查看產業議題、公司與投資人立場。</p>
+          <dl class="kpi-list">
+            <div><dt>Market Overview</dt><dd>掌握整體市場討論與注意力</dd></div>
+            <div><dt>Industrial Signals</dt><dd>查看主要產業議題與 attention trend</dd></div>
+            <div><dt>Investor Stance &amp; Evidence</dt><dd>查看可觀察立場與代表性文章</dd></div>
+            <div><dt>Company Detail</dt><dd>從公司層級深入查看相關討論</dd></div>
+            <div><dt>Drill-through</dt><dd>從分析結果回到代表性文章與原始來源</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-    <section class="case-section section-white"><div class="container case-two"><div class="case-aside"><p class="section-label">Power BI delivery</p><strong>頁面以決策問題分層。</strong><p>Market overview、Industrial Signals、Investor Stance &amp; Evidence，以及 Company drill-through。</p></div><div class="case-content"><h2>從市場概況到代表性文章</h2><p>模型讓使用者先看月份、議題、供應鏈與公司 attention，再進入 engagement、observable stance 與代表文章。Drill-through 保留 post_id、標題、日期、Evidence 與來源 URL，讓分析可以回查。</p><p>Comment analytical layer 只作 engagement 與 reaction context；778,853 則留言原文不強制載入主要報表，避免犧牲效能。</p></div></div></section>
+    <section class="case-section section-white">
+      <div class="container">
+        <p class="section-label">Selected Findings</p>
+        <h2>分析觀察</h2>
+        <div class="insight-list">
+          <article class="insight-row">
+            <span class="insight-grade">01</span>
+            <h3>AI / HPC 討論熱度上升，但可觀察立場沒有同步改善</h3>
+            <p>2026 年 6 月至 7 月，相關議題 attention 由 223 增至 316；Positive 由 10 增至 15，Negative 則由 4 增至 15。因此本專案將此現象定義為「attention–stance divergence」，不延伸為股價預測。</p>
+          </article>
+          <article class="insight-row">
+            <span class="insight-grade">02</span>
+            <h3>財報與獲利相關討論的重要性提高</h3>
+            <p>2026 年 6 月至 8 月，相關議題 attention 由 114 增至 246，再調整至 183；attention share 由 6.16% 提升至 11.46%。這裡只呈現 attention 的變化，不延伸成低樣本立場判斷。</p>
+          </article>
+          <article class="insight-row">
+            <span class="insight-grade">03</span>
+            <h3>TSMC 討論熱度與可觀察立場同時發生變化</h3>
+            <p>2026 年 6 月至 7 月，TSMC attention 由 150 增至 217；Positive 由 7 增至 17，Negative 由 14 降至 7。這項觀察需要搭配 company mapping 與 stance coverage 的限制理解。</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <section class="case-section section-ink"><div class="container"><p class="section-label">Limitations</p><h2>這個作品不把不確定性藏起來</h2><div class="metric-grid"><div class="metric-box"><strong>48%</strong><span>Company holdout recall；公司排名只能視為 mapped coverage</span></div><div class="metric-box"><strong>67.2%</strong><span>Production V2 UNKNOWN rate；UNKNOWN 不等於 NEUTRAL</span></div><div class="metric-box"><strong>Partial</strong><span>2026-09 只有 9/1，不參與完整月份 trend comparison</span></div><div class="metric-box"><strong>Descriptive</strong><span>Attention、stance、engagement 不支持因果或預測宣稱</span></div></div><div class="case-actions"><a class="button" href="../index.html#projects">Back to selected work</a><a class="button button-secondary" href="../resume.html">View Resume</a></div></div></section>
+    <section class="case-section">
+      <div class="container case-two">
+        <div class="case-aside">
+          <p class="section-label">Data / Methodology</p>
+          <strong>分析結果保留原始文章與資料關聯，讓每個觀察可以回查。</strong>
+        </div>
+        <div class="case-content">
+          <h2>資料與方法</h2>
+          <p>文章與留言分開處理，Attention 以 distinct post_id 計算；Investor Stance 維持 target-level，不把 UNKNOWN 合併為 NEUTRAL。留言時間缺乏可靠年份，因此只以 parent post 的月份提供討論脈絡。</p>
+          <div class="caveat">
+            <strong>Holdout protection</strong>
+            <p>60 筆 Final Holdout 全數排除於 production analysis，未用於規則調整、分類輸入或正式分析。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section section-ink">
+      <div class="container">
+        <p class="section-label">Limitations</p>
+        <h2>研究限制</h2>
+        <p class="section-intro">本專案的目的在於整理與觀察市場討論，而不是建立投資預測模型。</p>
+        <div class="metric-grid">
+          <div class="metric-box"><strong>48%</strong><span>Company holdout recall；公司結果代表已成功映射的討論，不等於完整市場聲量</span></div>
+          <div class="metric-box"><strong>67.2%</strong><span>Production V2 UNKNOWN rate；UNKNOWN 不等於 NEUTRAL</span></div>
+          <div class="metric-box"><strong>9 / 1</strong><span>2026-09 僅有 9 月 1 日資料，不與完整月份直接比較</span></div>
+          <div class="metric-box"><strong>Descriptive</strong><span>Attention、stance、engagement 為描述性分析，不支持因果或股票價格預測</span></div>
+        </div>
+        <div class="case-actions">
+          <a class="button" href="../index.html#projects">Back to selected work</a>
+          <a class="button button-secondary" href="../resume.html">View Resume</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container footer-row"><span>Data source: PTT Stock. Final Holdout excluded from production analysis.</span><a href="#main">Back to top</a></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>Data source: PTT Stock. Final Holdout excluded from production analysis.</span>
+      <a href="#main">Back to top</a>
+    </div>
+  </footer>
   <script src="../assets/js/site.js" defer></script>
 </body>
 </html>
