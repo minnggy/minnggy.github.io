@@ -721,6 +721,7 @@ h1, h2, h3, h4, p { overflow-wrap: anywhere; }
   font-weight: 500;
 }
 .case-visual { padding: 32px 0 0; }
+.medical-report-visual { padding-bottom: 44px; }
 .case-visual img {
   width: 100%;
   height: auto;
